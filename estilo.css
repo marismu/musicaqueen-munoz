@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* fondo a mi pagina */
+body {
+    background-image: url(imagenes/fondo-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*grid al body de la pagina */
+    display: grid;
+    grid-template-columns: auto 2 fr auto;
+    grid-template-rows: 20px 1fr 1 fr 1fr  20px;
+    grid-template-areas: 
+    "header header header"
+    "main main"
+    "main main"
+    "main main"
+    "footer footer footer";    
+}
+
+/* media queries */
+@media screen and (max-width:740px){
+.body {
+    grid-template-columns: 2 fr;
+    grid-template-rows: repeat(3 fr);
+    grid-template-areas:
+     "header hedaer"
+    "main"
+    "main"
+    "main"
+    "footer footer";
+}
+
+}
+/* media queries */
+@media screen and (max-width:540px){
+.body {
+    grid-template-columns: 1 fr;
+    grid-template-rows: repeat(3 fr 1fr);
+    grid-template-areas:
+     "header"
+    "main"
+    "main"
+    "main"
+    "footer";
+}
+}
+
+    /*grid  */
+.header{
+    display: flex;
+    grid-area: header;
+}
+
+nav {
+    padding: 1 rem;
+    grid-area: nav ;
+}
+
+/* agregando estilo a las listas del menu */
+.menu {
+    list-style-type: none;
+    margin: 0.7rem;
+    grid-area: mmenu;
+    display: flex;
+    justify-content: end;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    grid-area: menu li;
+    background-color: yellow;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: red;
+}
+
+.menu li:hover {
+    background-color: black;
+}
+/* aplicando estilos al titulo */
+h1 {
+    color: hsl(0, 20%, 1%);
+    font-family: 'Grechen Fuemen', cursive;
+    margin: 10px;
+    padding: 20px;
+    border: 10;
+    grid-area: h1;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 75px;
+    text-align: center;
+}
+ .aparecer {
+    margin: 50px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+  @keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+      50% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+      }
+    
+  }
+/* agregando color, margen, espacio y borde al h2 */
+h2 {
+    color: hsl(0, 3%, 6%);
+    margin: 20px;
+    padding: 20px;
+    
+}
+/* agregando color, margen, espacio y borde al h3 */
+h3 {
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+
+}
+/* agregando color, margen, espacio y borde al h4 */
+h4 {
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+
+}
+ /* espacios y margen a lista desordenada */
+ul {
+    margin: 10px;
+    padding: 10px;
+    grid-area: ul;
+}
+/* espacios y margen al formulario */
+form {
+    margin: 10px;
+    padding: 10;
+    grid-area: form;
+}
+
+
+/* width, height y margin al div */
+image {
+    margin: 30px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    gap: 10px;
+    grid-area: div;
+} 
+
+.banda {
+    background-image: banda;
+}
+
+.queen-1 {
+    background-image: queen-1;
+}
+
+.queen-2 {
+    background-image: queen-2;
+}
+
+.queen-3 {
+    background-image: queen-3;
+}
+
+.queen-4 {
+    background-image: queen-4;
+}
+
+.footer {
+    margin: 10px;
+    padding: 10px;
+}
+
+
