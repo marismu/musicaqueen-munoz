@@ -78,11 +78,11 @@ nav {
 
 .menu li a {
     text-decoration: none;
-    color: red;
+    color:black;
 }
 
 .menu li:hover {
-    background-color: black;
+    background-color:rgb(224, 14, 14);
 }
 /* aplicando estilos al titulo */
 h1 {
@@ -124,9 +124,10 @@ h2 {
 }
 /* agregando color, margen, espacio y borde al h3 */
 h3 {
-    margin: 10px;
-    padding: 10px;
-    border: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+color: black;
 
 }
 /* agregando color, margen, espacio y borde al h4 */
@@ -183,6 +184,10 @@ image {
 .footer {
     margin: 10px;
     padding: 10px;
+}
+.freddy {
+    margin: 10px; 
+    padding: 20px; 
 }
 
 
