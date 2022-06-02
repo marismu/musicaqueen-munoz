@@ -117,9 +117,10 @@ h1 {
   }
 /* agregando color, margen, espacio y borde al h2 */
 h2 {
-    color: hsl(0, 3%, 6%);
+    color:white;
     margin: 20px;
     padding: 20px;
+
     
 }
 /* agregando color, margen, espacio y borde al h3 */

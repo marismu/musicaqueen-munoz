@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+
     <link rel="stylesheet" href="estilo.css">
     <link rel="shortcut icon" href="fotos/favicon-32x32.png">
     <title>La música de siempre</title>
@@ -21,39 +25,95 @@
         </h2>
     </header>
     <!-- cierre del header -->
+    <hr>>
 
     <!-- inicio del main -->
-    <main>
-        <section>
-            <h1>
-                Galería de fotos
-            </h1>
-            <h2>
-                 Encontrá  las mejores fotos de la banda...
-            </h2>
-            <div>
-                <image src="./fotos/banda.jpg" alt="foto de la banda Queen" width="300px"> - <image src="./fotos/queen-1.jpg" alt="foto de la banda de Queen" width="300px">
-            </div>
+    <main class=" container" >
+        <h1>
+        Galería de fotos
+    </h1>
+    <section>
+    <!--incio del carousel-->
+    <div  id="carouselExampleIndicators" class="carousel slide w-75 mx-auto" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+           class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" 
+          aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" 
+          aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+           class="active" aria-current="true" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" 
+          aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" 
+          aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" 
+          class="active" aria-current="true" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" 
+          aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" 
+          aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+           class="active" aria-current="true" aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        </div>
 
-            <div>
-                <image src="./fotos/queen-3.jpg" alt="foto de la banda de Queen" width="300px"> - <image src="./fotos/queen-4.jpg" alt="foto de la banda de Queen" width="300px">
-            </div>
-            <div>
-                <image src="./fotos/queen-2.png" alt="foto de la banda de Queen" width="300px"></image>
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./fotos/banda.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./fotos/queen.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./fotos/banda5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./fotos/banda2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./fotos/banda3.jpg" class="d-block w-100" alt="...">
 
-        </section>
+          </div>
+          <div class="carousel-item">
+            <img src="./fotos/show.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./fotos/show2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./fotos/queen-0.jpg" class="d-block w-100" alt="...">
+          </div><div class="carousel-item">
+
+            <img src="./fotos/queen-12.jpg" class="d-block w-100" alt="...">
+          </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--fin del carousel-->
+     </section>
     </main>
     <!-- cierre del main -->
+    <hr>
     <!-- inicio del footer -->
     <footer>
-        <h2>
-            "Puedes ser lo que quieras, solo conviértete en lo que crees que podrías
-            ser" Freddy Mercury.
-        </h2>
+        <h3>
+            Seguinos en Facebook-Instagram-Youtube para ver las fotos inèditas de la banda.
+        </h3>
         
     </footer>
     <!-- fin del footer -->
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 <!-- cierre del body -->
