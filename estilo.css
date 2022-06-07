@@ -162,6 +162,7 @@ image {
     grid-area: div;
 } 
 
+
 .banda {
     background-image: banda;
 }
@@ -182,13 +183,38 @@ image {
     background-image: queen-4;
 }
 
+
 .footer {
     margin: 10px;
     padding: 10px;
 }
-.freddy {
-    margin: 10px; 
-    padding: 20px; 
+.queenn {
+    background-image:queenn;
+    text-align: center;
+    }
+/* transicion a la caja*/
+.caja1 {
+    margin: 20px auto;
+    padding: 10px;
+    width: 75vw;
+    height:15vh;
+    border-top: 30%;
 }
+.caja1 {
+    background-color: black;
+}
+.caja1 {
+    width: 100px;
+    height: 100px;
+    transition: height 2s, width 1s;
+} 
+.caja1:hover {
+    height: 300px;
+    width: 300px;
+}
+
+ 
+
+
 
 
